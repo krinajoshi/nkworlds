@@ -1,0 +1,21 @@
+<div class="footer-content container"> <!-- Added a container for content within the footer -->
+    <div class="footer-links">
+        <ul>
+            <li><a href="new_privacy.html">Privacy Policy</a></li> <!-- Added example link -->
+            <li><a href="new_terms.html">Terms of Service</a></li> <!-- Added example link -->
+            <li><a href="new_contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <p>&copy; <span id="current-year"></span> N.K. Worlds. All Rights Reserved.</p>
+        <!-- Simple script to set the current year -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const yearSpan = document.getElementById('current-year');
+                if (yearSpan) {
+                    yearSpan.textContent = new Date().getFullYear();
+                }
+            });
+        </script>
+    </div>
+</div>
